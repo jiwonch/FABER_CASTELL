@@ -1,0 +1,106 @@
+.inner_wrap {
+    width: 1280px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+/* 인트로영역시작*/
+div#intro_wrap {
+    width: 100%;
+    height: 980px;
+    background: darkgreen;
+    display: none;
+    opacity: 0;
+}
+
+/* 인트로영역끝*/
+/* 비쥬얼영역시작 */
+div#visual_wrap {
+    width: 100%;
+    height: 980px;
+    background: #F6F6F0;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+/* 비쥬얼영역끝 */
+/* 브랜드스토리영역시작 */
+div#brandstory_wrap {
+    width: 100%;
+    height: 2940px;
+    background: #1A362A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div#brandstory_inner {
+    width: 90%;
+    height: 95%;
+    border: solid 1px rgb(210, 210, 210);
+    box-sizing: border-box;
+    flex-basis: 90%;
+}
+
+
+div.brandstory {
+    width: 100%;
+    height: 930px;
+    background: #333333;
+}
+
+div.story {
+    background: #535335;
+}
+
+div.philo {
+    background: #453163;
+}
+
+div.time {
+    background: #14534A;
+}
+
+/* 브랜드스토리영역끝 */
+/* 콘텐츠영역시작 */
+div#contents_wrap {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+}
+
+div.contents {
+    width: 100%;
+    height: 980px;
+    background: darkred;
+}
+
+/* 색연필영역시작 */
+div.colorpen {
+    background: #ECF6F0;
+}
+
+/* 색연필영역끝 */
+/* 마커영역시작 */
+div.marker {
+    background: #ECF6F0;
+}
+
+/* 마커영역끝 */
+/* 파스텔영역시작 */
+div.pastel {
+    background: #ECF6F0;
+}
+
+/* 파스텔영역끝 */
+/* 물감영역시작 */
+div.paints {
+    background: #ECF6F0;
+}
+
+/* 물감영역끝 */
+
+/* 콘텐츠영역끝 */
