@@ -1,7 +1,7 @@
 .inner_wrap {
     width: 1280px;
     height: 100%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 /* 인트로영역시작*/
@@ -20,8 +20,8 @@ div#visual_wrap {
     height: 980px;
     background: #F6F6F0;
     position: relative;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
 }
 
 /* 비쥬얼영역끝 */
