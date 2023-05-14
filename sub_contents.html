@@ -8,32 +8,46 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sub_style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
     <title>Faber-Castell Products</title>
 </head>
 <body>
     <!-- 콘텐츠영역시작 -->
-    <div id="contents_wrap">
-        <div class="contents colorpen">
-            <div class="inner_wrap">
-                최정태 작업부분
+    <div id="main" class="scroll-container">
+        <!-- 정태 - 색연필-->
+        <section class="section1">
+            <div class="colorpen">
+                <span>ColorPen</span>
             </div>
-        </div>
-        <div class="contents marker">
-            <div class="inner_wrap">
-                최지원 작업부분
+        </section>
+        <!-- 지원 - 마커-->
+        <section class="section2">
+            <div class="marker">
+                <span>Marker</span>
             </div>
-        </div>
-        <div class="contents pastel">
-            <div class="inner_wrap">
-                이고은 작업부분
+        </section>
+        <!--  고은 - 파스텔  -->
+        <section class="section3">
+            <div class="pastel">
+                <span>Pastel</span>
             </div>
-        </div>
-        <div class="contents paints">
-            <div class="inner_wrap">
-                권혁성 작업부분
+        </section>
+        <!--  혁성 - 물감  -->
+        <section class="section4">
+            <div class="paint">
+                <span>Paint</span>
             </div>
-        </div>
+        </section>
     </div>
     <!-- 콘텐츠영역끝 -->
+    <script src="./js/sub_contents.js"></script>
 </body>
 </html>
