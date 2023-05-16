@@ -6,4 +6,28 @@ section {
     color: white;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 400%;
+}
+
+article.products {
+    background: #ECF6F0;
+    width: 100%;
+    height: 100vh;
+}
+
+article.colorpen {
+    border: 1px solid red;
+}
+
+article.marker {
+    border: 1px solid blue;
+}
+
+article.pastel {
+    border: 1px solid green;
+}
+
+article.paint {
+    border: 1px solid yellowgreen;
 }

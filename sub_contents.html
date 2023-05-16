@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/sub_style.css">
     <!--  jQuery CDN  -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
@@ -21,34 +20,40 @@
     <title>Faber-Castell PRODUCTS</title>
 </head>
 <body>
-    <!-- 콘텐츠영역시작 -->
-    <div id="main" class="scroll-container">
+    <!-- TODO fullpage js 구현 -->
+    <!-- contents section - Fiber Castell Products -->
+    <main id="main" class="scroll_container">
+
         <!-- 정태 - 색연필-->
         <section class="section1">
-            <div class="colorpen">
+            <article class="colorpen products">
                 <span>ColorPen</span>
-            </div>
+            </article>
         </section>
+
         <!-- 지원 - 마커-->
         <section class="section2">
-            <div class="marker">
+            <article class="marker products">
                 <span>Marker</span>
-            </div>
+            </article>
         </section>
+
         <!--  고은 - 파스텔  -->
         <section class="section3">
-            <div class="pastel">
+            <article class="pastel products">
                 <span>Pastel</span>
-            </div>
+            </article>
         </section>
+
         <!--  혁성 - 물감  -->
         <section class="section4">
-            <div class="paint">
+            <article class="paint products">
                 <span>Paint</span>
-            </div>
+            </article>
         </section>
-    </div>
-    <!-- 콘텐츠영역끝 -->
+
+    </main>
+
     <script src="./js/sub_contents.js"></script>
 </body>
 </html>
