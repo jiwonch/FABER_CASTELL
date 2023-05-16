@@ -14,11 +14,15 @@
 </head>
 
 <body>
-    <!--main menu-->
-    <!--  .fullNav - toggle click event 발생 시 show  -->
-    <!-- TODO: overlay 시 뒤 body 영역이 scroll 되는 것 해결 -->
-    <!-- fullNav -> js display: block; -->
-    <section id="full_nav_wrap" class="fullNav">
+<!--main menu-->
+<!--  .fullNav - toggle click event 발생 시 show  -->
+<!-- TODO: overlay 시 뒤 body 영역이 scroll 되는 것 해결 -->
+<!-- fullNav -> js display: block; -->
+<section id="full_nav_wrap" class="fullNav">
+    <div class="split-container">
+        <div class="image-container">
+            <img src="https://via.placeholder.com/500x500" alt="Test Image">
+        </div>
         <nav id="main_nav">
             <ul class="nav nav_list">
                 <li><a href="#">ColorPen</a></li>
@@ -27,65 +31,73 @@
                 <li><a href="#">Paint</a></li>
             </ul>
         </nav>
+    </div>
+</section>
+
+<!--skip menu list-->
+<!--  menu -> mn  -->
+<aside>
+    <ul id="skip_mn_list">
+        <li><a href="#" class="hidden">메인메뉴바로가기</a></li>
+        <li><a href="#" class="hidden">본문바로가기</a></li>
+        <li><a href="#" class="hidden">하단바로가기</a></li>
+    </ul>
+</aside>
+
+<!--  header  -->
+<header id="header_wrap">
+    <!-- toggle -> tgl -->
+    <!-- .tglMn -> js 연결 - main menu open -->
+    <div id="tgl_mn" class="tglMn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="white" d="M0 0h24v24H0z" fill-opacity="0"/>
+            <path fill="white" d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+</header>
+
+<!-- visual -->
+<main id="faber_castell">
+
+    <!-- visual wrap -->
+    <section id="visual_wrap">
+        <article class="inner_wrap">
+
+        </article>
     </section>
 
-    <!--skip menu list-->
-    <!--  menu -> mn  -->
-    <aside>
-        <ul id="skip_mn_list">
-            <li><a href="#" class="hidden">메인메뉴바로가기</a></li>
-            <li><a href="#" class="hidden">본문바로가기</a></li>
-            <li><a href="#" class="hidden">하단바로가기</a></li>
-        </ul>
-    </aside>
+    <!-- brand story wrap-->
+    <section id="brandstory_wrap">
+        <div id="
+brandstory_inner">
 
-    <!--  header  -->
-    <header id="header_wrap">
-        <!-- toggle -> tgl -->
-        <!-- .tglMn -> js 연결 - main menu open -->
-        <div id="tgl_mn" class="tglMn"></div>
-    </header>
+            php
+            Copy code
+            <!-- brand stroy -->
+            <article class="brandstory story">
+                <div class="inner_wrap">
 
-    <!-- visual -->
-    <main id="faber_castell">
-
-        <!-- visual wrap -->
-        <section id="visual_wrap">
-            <article class="inner_wrap">
-
+                </div>
             </article>
-        </section>
 
-        <!-- brand story wrap-->
-        <section id="brandstory_wrap">
-            <div id="brandstory_inner">
+            <!-- brand philosophy -->
+            <article class="brandstory philo">
+                <div class="inner_wrap">
 
-                <!-- brand stroy -->
-                <article class="brandstory story">
-                    <div class="inner_wrap">
+                </div>
+            </article>
 
-                    </div>
-                </article>
+            <!-- brand timeline -->
+            <article class="brandstory timeline">
+                <div class="inner_wrap">
 
-                <!-- brand philosophy -->
-                <article class="brandstory philo">
-                    <div class="inner_wrap">
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
 
-                    </div>
-                </article>
-
-                <!-- brand timeline -->
-                <article class="brandstory timeline">
-                    <div class="inner_wrap">
-
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <!--  main js 연결  -->
-    <script src="./js/main.js"></script>
+<!--  main js 연결  -->
+<script src="./js/main.js"></script>
 </body>
-
 </html>
