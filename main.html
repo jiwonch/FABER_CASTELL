@@ -15,8 +15,9 @@
 
 <body>
     <!--main menu-->
-    <!--  fullNav - toggle click event 발생 시 show  -->
-    <!-- TODO: overlay 시 뒤 body 영역이 scroll 되는것 해결해야함 -->
+    <!--  .fullNav - toggle click event 발생 시 show  -->
+    <!-- TODO: overlay 시 뒤 body 영역이 scroll 되는 것 해결해야함 -->
+    <!-- fullNav -> js display: block; -->
     <section id="full_nav_wrap" class="fullNav">
         <nav id="main_nav">
             <ul class="nav nav_list">
@@ -41,7 +42,8 @@
     <!--  header  -->
     <header id="header_wrap">
         <!-- toggle -> tgl -->
-        <div id="tgl_mn"></div>
+        <!-- .tglMn -> js 연결 - main menu open -->
+        <div id="tgl_mn" class="tglMn"></div>
     </header>
 
     <!-- visual -->
