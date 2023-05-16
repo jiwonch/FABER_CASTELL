@@ -15,7 +15,9 @@
 
 <body>
     <!--main menu-->
-    <article id="full_nav_wrap">
+    <!--  fullNav - toggle click event 발생 시 show  -->
+    <!-- TODO: overlay 시 뒤 body 영역이 scroll 되는것 해결해야함 -->
+    <section id="full_nav_wrap" class="fullNav">
         <nav id="main_nav">
             <ul class="nav nav_list">
                 <li><a href="#">ColorPen</a></li>
@@ -24,50 +26,64 @@
                 <li><a href="#">Paint</a></li>
             </ul>
         </nav>
-    </article>
+    </section>
 
     <!--skip menu list-->
-    <ul id="skipmenu_list">
-        <li><a href="#" class="hidden">메인메뉴바로가기</a></li>
-        <li><a href="#" class="hidden">본문바로가기</a></li>
-        <li><a href="#" class="hidden">하단바로가기</a></li>
-    </ul>
+    <!--  menu -> mn  -->
+    <aside>
+        <ul id="skip_mn_list">
+            <li><a href="#" class="hidden">메인메뉴바로가기</a></li>
+            <li><a href="#" class="hidden">본문바로가기</a></li>
+            <li><a href="#" class="hidden">하단바로가기</a></li>
+        </ul>
+    </aside>
 
     <!--  header  -->
     <header id="header_wrap">
+        <!-- toggle -> tgl -->
         <div id="tgl_mn"></div>
     </header>
 
     <!-- visual -->
     <main id="faber_castell">
-        <div id="visual_wrap">
-            <div class="inner_wrap">
 
-            </div>
-        </div>
-        <!-- 비쥬얼영역끝 -->
-        <!-- 브랜드스토리영역시작 -->
-        <div id="brandstory_wrap">
+        <!-- visual wrap -->
+        <section id="visual_wrap">
+            <article class="inner_wrap">
+
+            </article>
+        </section>
+
+        <!-- brand story wrap-->
+        <section id="brandstory_wrap">
             <div id="brandstory_inner">
-                <div class="brandstory story">
+
+                <!-- brand stroy -->
+                <article class="brandstory story">
                     <div class="inner_wrap">
 
                     </div>
-                </div>
-                <div class="brandstory philo">
+                </article>
+
+                <!-- brand philosophy -->
+                <article class="brandstory philo">
                     <div class="inner_wrap">
 
                     </div>
-                </div>
-                <div class="brandstory time">
+                </article>
+
+                <!-- brand timeline -->
+                <article class="brandstory timeline">
                     <div class="inner_wrap">
 
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     </main>
 
+    <!--  main js 연결  -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
