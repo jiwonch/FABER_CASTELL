@@ -201,4 +201,20 @@ div.contents {
 
 .timeline > .inner_wrap {
     background-color: lightpink;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tline_wrap {
+    height: 100%;
+}
+
+.tline_img_wrap {
+    width: 55%;
+    background-color: yellowgreen;
+}
+
+.tline_txt_wrap {
+    background-color: lightpink;
+    width: 45%;
 }
