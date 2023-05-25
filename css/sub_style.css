@@ -22,6 +22,9 @@ article.colorpen {
 
 article.marker {
     border: 1px solid blue;
+    background: url("../images/bg_marker.svg") #ECF6F0;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 article.pastel {
