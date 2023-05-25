@@ -3,6 +3,39 @@
    License: none (public domain)
 */
 
+/* 한글 폰트 gmaket sans - font-weight 300, 500, 700 */
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* 영어 폰트 IBM Plex Sans - font-weight 100, 200, 300, 400, 500, 600, 700 font-style normal, itallic */
+/* font-family: 'IBM Plex Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* 기본 폰트 설정은 한국어로 */
+/* 영어 폰트의 경우에는 클래스나, 아이디로 설정함 */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #333333;
+	font-family: 'GmarketSansMedium';
+	font-weight: 400;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+button {
+	border: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,31 +52,31 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	/*font-size: 100%;*/
+	/*font: inherit;*/
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul, li{
+
+ol, ul, li, dl, dt, dd{
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+input {
+	outline: none;
 }
 
