@@ -10,6 +10,8 @@ section {
     height: 400%;
 }
 
+
+
 article.products {
     background: #ECF6F0;
     width: 100%;
@@ -18,6 +20,39 @@ article.products {
 
 article.colorpen {
     border: 1px solid red;
+    width:1280px;
+    height:100vh;
+    background: red;
+    margin: 0px auto;
+}
+
+div.contents_left{
+    width:50%;
+    height:100%;
+    background: blue;
+    float:left;padding-top: 170px;}
+
+div.contents_text{
+    width:100%;
+    height:610px;
+    background: red;
+}
+div.contents_text_title{
+    width:100%;
+    height:130px;
+    background: green;
+}
+div.contents_text_subtitle{
+    width:100%;
+    height:480px;
+    background:hotpink;
+}
+
+div.contents_right{
+    width:50%;
+    height:100%;
+    background: yellow;
+    float:left;
 }
 
 article.marker {
