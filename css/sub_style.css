@@ -33,7 +33,9 @@ article.products {
     width: 100%;
     height: 100vh;
 }
-article.colorpen{
+
+/*색연필영역시작*/
+article.colorpen2{
     width:1280px;
     height:100vh;
     position:absolute;
@@ -88,71 +90,4 @@ p.contents_text_info_subtitle{
     font:normal 20px/40px "GmarketSansMedium";
     color:#333333;
 }
-
-
-
-/* 파스텔영역시작 */
-article.pastel {
-    position: relative;
-    left: 0;
-    top:0;
-}
-div.pastel_out_right{
-    width: 49%;
-    height: 100vh;
-    background: url('/images/patel_img_back.jpg') no-repeat;
-    background-size: cover;
-    position: absolute;
-    right: 0;
-    top: 0;
-    opacity: 0.3;
-}
-div.pastel_inner{
-    width: 1280px;
-    height: 100vh;
-    position: absolute;
-    left: 50%;
-    top:0;
-    margin-left: -640px;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-/* 파스텔텍스트영역시작 */
-div.pastel_left_box{
-    width: 660px;
-    height: 100%;
-    padding: 180px 0;
-    box-sizing: border-box;
-}
-p.pastel_title{
-    width: 100%;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 150%;
-    margin-bottom: 100px;
-}
-p.pastel_text{
-    width: 620px;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 150%;
-}
-/* 파스텔텍스트영역끝 */
-div.pastel_right_box{
-    width: 620px;
-    height: 100%;
-}
-p.pastel_img_front{
-    width: 100%;
-}
-p.pastel_img_front>img{
-    width: 100%;
-    display: block;
-}
-/* 파스텔영역끝 */
-article.paint {
-    border: 1px solid yellowgreen;
-}
+/*색연필영역끝*/
