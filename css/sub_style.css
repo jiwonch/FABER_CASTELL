@@ -3,7 +3,6 @@
 section {
     color: #333333;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
     width: 100%;
     height: 400%;
 }
@@ -15,17 +14,14 @@ article.products {
     height: 100vh;
 }
 
-/*
 article.colorpen {
     width:1280px;
     height:100vh;
-
-    background: url("/images/colorpen_back_00.png") no-repeat center;
-
+    /*background: url("/images/colorpen_back_00.png") no-repeat center;*/
     position:absolute;
     left:50%;
     margin-left: -640px;
-    top:0px;
+    top:0;
 }
 article.contents_left_image{
     width:50%;
@@ -84,7 +80,7 @@ p.contents_text_info_subtitle{
     font:normal 30px/40px "GmarketSansMedium";
     color:#333333;
 }
-*/
+
 
 article.marker {
     border: 1px solid blue;
@@ -93,15 +89,17 @@ article.marker {
 /* 파스텔영역시작 */
 article.pastel {
     position: relative;
+    left: 0;
+    top:0;
 }
 div.pastel_out_right{
-    width: 50%;
+    width: 49%;
     height: 100vh;
     background: url('/images/patel_img_back.jpg') no-repeat;
     background-size: cover;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     opacity: 0.3;
 }
 div.pastel_inner{
@@ -109,40 +107,37 @@ div.pastel_inner{
     height: 100vh;
     position: absolute;
     left: 50%;
-    top:0px;
+    top:0;
     margin-left: -640px;
     z-index: 10;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: solid 1px red; */
 }
 /* 파스텔텍스트영역시작 */
 div.pastel_left_box{
-    width: 50%;
+    width: 660px;
     height: 100%;
-    padding: 180px 0px;
+    padding: 180px 0;
     box-sizing: border-box;
 }
 p.pastel_title{
     width: 100%;
-    font-family: 'GmarketSansMedium';
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 150%;
     margin-bottom: 100px;
 }
 p.pastel_text{
-    width: 610px;
-    font-family: 'GmarketSansMedium';
+    width: 620px;
     font-size: 30px;
-    font-weight: normal;
+    font-weight: 300;
     line-height: 150%;
 }
 /* 파스텔텍스트영역끝 */
 div.pastel_right_box{
-    width: 50%;
+    width: 620px;
     height: 100%;
 }
 p.pastel_img_front{
