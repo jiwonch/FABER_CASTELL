@@ -8,21 +8,10 @@ section {
     height: 400%;
 }
 
-
-article.products {
-    /*background: #ECF6F0;*/
-    width: 100%;
-    height: 100vh;
-}
-
-article.colorpen {
-    width:1280px;
+section.section1{
+    width:100%;
     height:100vh;
-    /*background: url("/images/colorpen_back_00.png") no-repeat center;*/
-    position:absolute;
-    left:50%;
-    margin-left: -640px;
-    top:0px;
+    background:#ECF6F0;
 }
 article.contents_left_image{
     width:50%;
@@ -39,12 +28,28 @@ article.contents_right_image{
     float:left;
     opacity:0.3;
 }
+
+article.products {
+    width: 100%;
+    height: 100vh;
+}
+article.colorpen{
+    width:1280px;
+    height:100vh;
+    position:absolute;
+    left:50%;
+    margin-left: -640px;
+    top:0px;
+}
+
 div.contents_left{
     width:50%;
     height:100%;
     background: #ECF6F0;
     float:left;
-    padding-top: 170px;}
+    padding-top: 170px;
+}
+
 
 div.contents_text{
     width:100%;
@@ -53,6 +58,7 @@ div.contents_text{
 div.contents_text_title{
     width:100%;
     height:130px;
+
 }
 div.contents_text_subtitle{
     width:100%;
@@ -66,31 +72,21 @@ div.contents_right{
     height:100%;
     float:left;
 }
+
 div.contents_image{
     width:100%;
-    height:780px;
-    background-image: url("/images/colorpen_00.png");
-    background-size: cover;
+    height:680px;
+    background:url("/images/colorpen_00.png")no-repeat;
+    background-size: contain;
 }
 
 h2.contents_text_info_title{
-    font:bold 50px "GmarketSansMedium";
+    font:bold 40px "GmarketSansMedium";
     color:#333333;
 }
 p.contents_text_info_subtitle{
-    font:normal 30px/40px "GmarketSansMedium";
+    font:normal 20px/40px "GmarketSansMedium";
     color:#333333;
 }
 
 
-article.marker {
-    border: 1px solid blue;
-}
-
-article.pastel {
-    border: 1px solid green;
-}
-
-article.paint {
-    border: 1px solid yellowgreen;
-}
