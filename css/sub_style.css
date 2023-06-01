@@ -3,138 +3,90 @@
 section {
     color: #333333;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
     width: 100%;
     height: 400%;
 }
 
+section.section1{
+    width:100%;
+    height:100vh;
+    background:#ECF6F0;
+}
+article.contents_left_image{
+    width:50%;
+    height:100vh;
+    float:left;
+    background:#ECF6F0;
+}
+
+article.contents_right_image{
+    width:50%;
+    height:100vh;
+    background:url("/images/colorpen_back_img.png")no-repeat center;
+    background-size: cover;
+    float:left;
+    opacity:0.3;
+}
+
 article.products {
-    background: #ECF6F0;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 
-article.colorpen {
-    border: 1px solid red;
-}
-
-article.marker {
-    background-color: #ECF6F0;
-    position: relative;
-}
-
-div.maker_bg {
-    width: 49%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    background: url("../images/mk_bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-div.marker_inner {
-    width: 1280px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-div.marker_img {
-    width: 620px;
-    height: 840px;
-    margin-right: 40px;
-    background: url("../images/mk_smbg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-div.marker_txt {
-    width: 620px;
-    height: 100%;
-}
-
-h1.marker_title {
-    margin-top: 180px;
-    font-size: 50px;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 100px;
-}
-
-h5.marker_con_txt {
-    font-size: 30px;
-    font-weight: 300;
-    text-align: left;
-    line-height: 130%;
-}
-
-/* 파스텔영역시작 */
-article.pastel {
-    position: relative;
-    left: 0;
-    top:0;
-}
-div.pastel_out_right{
-    width: 49%;
-    height: 100vh;
-    background: url('/images/patel_img_back.jpg') no-repeat;
-    background-size: cover;
-    position: absolute;
-    right: 0;
-    top: 0;
-    opacity: 0.3;
-}
-div.pastel_inner{
-    width: 1280px;
-    height: 100vh;
-    position: absolute;
-    left: 50%;
-    top:0;
+/*색연필영역시작*/
+article.colorpen2{
+    width:1280px;
+    height:100vh;
+    position:absolute;
+    left:50%;
     margin-left: -640px;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    top:0px;
 }
-/* 파스텔텍스트영역시작 */
-div.pastel_left_box{
-    width: 660px;
-    height: 100%;
-    padding: 180px 0;
-    box-sizing: border-box;
+
+div.contents_left{
+    width:50%;
+    height:100%;
+    background: #ECF6F0;
+    float:left;
+    padding-top: 170px;
 }
-p.pastel_title{
-    width: 100%;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 150%;
-    margin-bottom: 100px;
+
+
+div.contents_text{
+    width:100%;
+    height:610px;
 }
-p.pastel_text{
-    width: 620px;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 150%;
+div.contents_text_title{
+    width:100%;
+    height:130px;
+
 }
-/* 파스텔텍스트영역끝 */
-div.pastel_right_box{
-    width: 620px;
-    height: 100%;
+div.contents_text_subtitle{
+    width:100%;
+    height:480px;
+    padding-top:100px;
+    box-sizing:border-box;
 }
-p.pastel_img_front{
-    width: 100%;
+
+div.contents_right{
+    width:50%;
+    height:100%;
+    float:left;
 }
-p.pastel_img_front>img{
-    width: 100%;
-    display: block;
+
+div.contents_image{
+    width:100%;
+    height:680px;
+    background:url("/images/colorpen_00.png")no-repeat;
+    background-size: contain;
 }
-/* 파스텔영역끝 */
-article.paint {
-    border: 1px solid yellowgreen;
+
+h2.contents_text_info_title{
+    font:bold 40px "GmarketSansMedium";
+    color:#333333;
 }
+p.contents_text_info_subtitle{
+    font:normal 20px/40px "GmarketSansMedium";
+    color:#333333;
+}
+/*색연필영역끝*/
