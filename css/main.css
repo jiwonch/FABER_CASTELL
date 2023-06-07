@@ -5,24 +5,26 @@ body {
 
 /***** 메뉴 영역 [S] *****/
 #full_nav_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 기존의 속성들 */
     position: fixed;
-    display: none;
     width: 100%;
     height: 100%;
     background-color: #1A362A;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     z-index: 100;
-    overflow-y: hidden;
 }
 
 #main_nav {
-    width: 100%;
-    height: 100%;
+    flex: 1;
     background-color: white;
-    /*overflow: hidden;*/
+}
+.main_nav_wrap {
+    height: 980px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #main_nav .nav_list li>a {
@@ -32,6 +34,10 @@ body {
 #main_nav .nav_list li>a:hover {
     color: white;
     background-color: #1A362A;
+}
+
+.nav_list li {
+    height:150px;
 }
 
 .nav_list li>a {
@@ -46,14 +52,15 @@ body {
     position: absolute;
     width: 627px;
     height: 574px;
-    left: 1015px;
+    left: 145px;
     top: 150px;
 }
 
 .split-container {
     display: flex;
     justify-content: space-between;
-    height: 100vh; /* 브라우저 높이를 100%로 설정 */
+    width: 1920px;
+    height: 100%; /* 브라우저 높이를 100%로 설정 */
 }
 
 .split-container .image-container {
@@ -67,11 +74,6 @@ body {
     height: 100%; /* 부모 요소인 .image-container의 높이를 100%로 설정 */
 }
 
-.split-container #main_nav {
-    flex: 1;
-    text-align: right;
-    height: 100%; /* 브라우저 높이를 100%로 설정 */
-}
 
 /***** 메뉴 영역 [E] *****/
 
@@ -89,7 +91,7 @@ header#header_wrap {
 }
 
 
-/* 햄버거 메뉴[S] */
+/* 햄버거 메뉴 */
 #tgl_mn {
     margin-right: 20px;
     width: 50px;
@@ -99,12 +101,57 @@ header#header_wrap {
     position: absolute;
     z-index: 9999;
 }
-
 #tgl_mn svg {
     fill: white;
 }
 
-/* 햄버거 메뉴[E] */
+
+/* 닫기 버튼 */
+img.Vector {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right:50px;
+    top:50px;
+    object-fit: contain;
+}
+
+
+/* SNS 버 */
+img.faceboock {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:110px;
+    bottom:35px;
+    object-fit: contain;
+}
+img.twitter-fill {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:218px;
+    bottom:35px;
+    object-fit: contain;
+}
+img.instagram-original {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:326px;
+    bottom:35px;
+    object-fit: contain;
+}
+img.youtube {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:434px;
+    bottom:35px;
+    object-fit: contain;
+}
+
+
 
 
 .hidden {
@@ -126,7 +173,6 @@ ul#skip_mn_list>li>a:focus {
     top: 0;
     font: normal 16px/30px "Noto Sans KR";
     text-align: center;
-
     color: white;
 }
 
