@@ -1,15 +1,13 @@
 // toggle click event 발생 시, main menu open
 $(document).ready(function(){
-    $('.tglMn').click(function(){
+    $('.tglMn,img.Vector').click(function(){
         $('.fullNav').toggle();
-        $('#tgl_mn').css('z-index', '9999');
-    });
+        if($('.fullNav').css("display"))
 
-    $(document).click(function(event){
-        var target = $(event.target);
-        if (!target.closest('.tglMn').length) {
-            $('.fullNav').hide();
-            $('#tgl_mn').css('z-index', '1');
+        if ($("#full_nav_wrap").css("display") === "none") {
+            $("body").css("overflow-y", "auto");
+        } else {
+            $("body").css("overflow-y", "hidden");
         }
     });
 });

@@ -1,0 +1,41 @@
+# JetBrains IDEs
+/.idea/
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/*.iml
+/out/
+
+# VS Code
+.vscode/
+*.code-workspace
+*.vscode/
+*.vscodeignore
+
+# Visual Studio Code에서 생성된 자동 완성 디렉토리
+.codeintel/
+.vs/
+
+# JetBrains에서 생성된 자동 완성 디렉토리
+/.idea/caches/
+
+# JetBrains의 프로젝트 관련 파일
+/*.ipr
+/*.iws
+/*.ids
+/.idea_modules/
+
+# JetBrains WebStorm
+/.idea/jsLibraryMappings.xml
+
+# JetBrains RubyMine
+/.idea/workspace.xml
+
+# JetBrains PhpStorm
+/.idea/php.xml
+
+# JetBrains PyCharm
+/.idea/pycharm.xml
+/.idea/python.xml
+
+# JetBrains IntelliJ IDEA
+/out/
