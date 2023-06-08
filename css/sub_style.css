@@ -8,6 +8,21 @@ section {
     overflow: hidden;
     background:#ECF6F0;
 }
+article.contents_left_image{
+    width:50%;
+    height:100vh;
+    float:left;
+    background:#ECF6F0;
+}
+
+article.contents_right_image{
+    width:50%;
+    height:100vh;
+    background:url("/images/colorpen_back_img.png")no-repeat center;
+    background-size: cover;
+    float:left;
+    opacity:0.3;
+}
 
 article.products {
     background: #ECF6F0;
@@ -23,6 +38,7 @@ article.colorpen2{
     left:50%;
     margin-left: -640px;
     top:0px;
+    background:#ECF6F0;
 }
 
 div.contents_left{
@@ -57,18 +73,18 @@ div.contents_right{
 }
 
 div.contents_image{
-    width:100%;
-    height:680px;
+    width:640px;
+    height:826px;
     background:url("/images/colorpen_00.png")no-repeat;
     background-size: contain;
 }
 
 h2.contents_text_info_title{
-    font:bold 40px "GmarketSansMedium";
+    font:700 50px "GmarketSansMedium";
     color:#333333;
 }
 p.contents_text_info_subtitle{
-    font:normal 20px/40px "GmarketSansMedium";
+    font:300 20px/40px "GmarketSansMedium";
     color:#333333;
 }
 /*색연필영역끝*/
