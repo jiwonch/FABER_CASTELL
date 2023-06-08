@@ -1,29 +1,77 @@
 @charset "uft-8";
 
 section {
-    color: white;
+    color: #333333;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
     width: 100%;
     height: 400%;
+    overflow: hidden;
+    background:#ECF6F0;
 }
-
-
 article.products {
-    /*background: #ECF6F0;*/
+    background: #ECF6F0;
     width: 100%;
     height: 100vh;
 }
 
-article.colorpen {
+/*색연필영역시작*/
+article.colorpen2{
     width:1280px;
     height:100vh;
-    /*background: url("/images/colorpen_back_00.png") no-repeat center;*/
     position:absolute;
     left:50%;
     margin-left: -640px;
     top:0px;
+    background:#ECF6F0;
 }
+
+div.contents_left{
+    width:50%;
+    height:100%;
+    background: #ECF6F0;
+    float:left;
+    padding-top: 170px;
+}
+
+
+div.contents_text{
+    width:100%;
+    height:610px;
+}
+div.contents_text_title{
+    width:100%;
+    height:130px;
+
+}
+div.contents_text_subtitle{
+    width:100%;
+    height:480px;
+    padding-top:100px;
+    box-sizing:border-box;
+}
+
+div.contents_right{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+div.contents_image{
+    width:640px;
+    height:826px;
+    background:url("/images/colorpen_00.png")no-repeat;
+    background-size: contain;
+}
+
+h2.contents_text_info_title{
+    font:700 50px "GmarketSansMedium";
+    color:#333333;
+}
+p.contents_text_info_subtitle{
+    font:300 20px/40px "GmarketSansMedium";
+    color:#333333;
+}
+
 article.contents_left_image{
     width:50%;
     height:100vh;
@@ -39,58 +87,128 @@ article.contents_right_image{
     float:left;
     opacity:0.3;
 }
-div.contents_left{
-    width:50%;
-    height:100%;
-    background: #ECF6F0;
-    float:left;
-    padding-top: 170px;}
+/*색연필영역끝*/
 
-div.contents_text{
-    width:100%;
-    height:610px;
-}
-div.contents_text_title{
-    width:100%;
-    height:130px;
-}
-div.contents_text_subtitle{
-    width:100%;
-    height:480px;
-    padding-top:100px;
-    box-sizing:border-box;
+/* 마커 영역  */
+div.marker {
+    position: relative;
 }
 
-div.contents_right{
-    width:50%;
-    height:100%;
-    float:left;
+div.marker_outerwrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
-div.contents_image{
-    width:100%;
-    height:780px;
-    background-image: url("/images/colorpen_00.png");
+
+div.marker_outer_bg {
+    width: 49%;
+    height: 100%;
+    background: url("../images/mk_bg.svg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-h2.contents_text_info_title{
-    font:bold 50px "GmarketSansMedium";
-    color:#333333;
-}
-p.contents_text_info_subtitle{
-    font:normal 30px/40px "GmarketSansMedium";
-    color:#333333;
-}
-
-
-article.marker {
-    border: 1px solid blue;
+div.marker_innerwrap {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
+div.marker_img {
+    width: 620px;
+    height: 826px;
+    background: url("../images/mk_smbg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 40px;
+}
+
+div.marker_text {
+    width: 620px;
+    height: auto;
+    margin-top: 180px;
+}
+
+h1.marker_txt {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+p.marker_context {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+/* 파스텔영역시작 */
 article.pastel {
-    border: 1px solid green;
+    position: relative;
+    left: 0;
+    top:0;
 }
-
+div.pastel_out_right{
+    width: 49%;
+    height: 100vh;
+    background: url('/images/patel_img_back.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.3;
+}
+div.pastel_inner{
+    width: 1280px;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top:0;
+    margin-left: -640px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* 파스텔텍스트영역시작 */
+div.pastel_left_box{
+    width: 660px;
+    height: 100%;
+    padding: 180px 0;
+    box-sizing: border-box;
+}
+p.pastel_title{
+    width: 100%;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 100px;
+}
+p.pastel_text{
+    width: 620px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 150%;
+}
+/* 파스텔텍스트영역끝 */
+div.pastel_right_box{
+    width: 620px;
+    height: 826px;
+}
+p.pastel_img_front{
+    width: 100%;
+}
+p.pastel_img_front>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* 파스텔영역끝 */
 article.paint {
     border: 1px solid yellowgreen;
 }
