@@ -31,7 +31,7 @@ article.pastel {
 div.pastel_out_right{
     width: 49%;
     height: 100vh;
-    background: url('/images/patel_img_back.jpg') no-repeat;
+    background: url('/images/patel_img_back.svg') no-repeat;
     background-size: cover;
     position: absolute;
     right: 0;
@@ -74,13 +74,14 @@ p.pastel_text{
 /* 파스텔텍스트영역끝 */
 div.pastel_right_box{
     width: 620px;
-    height: 100%;
+    height: 826px;
 }
 p.pastel_img_front{
     width: 100%;
 }
 p.pastel_img_front>img{
     width: 100%;
+    height: 100%;
     display: block;
 }
 /* 파스텔영역끝 */
