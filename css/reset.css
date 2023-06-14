@@ -11,9 +11,9 @@
 	font-style: normal;
 }
 
-/* 영어 폰트 IBM Plex Sans - font-weight 100, 200, 300, 400, 500, 600, 700 font-style normal, itallic */
-/* font-family: 'IBM Plex Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* 영어 폰트 IBM Plex Serif - font-weight 100, 200, 300, 400, 500, 600, 700 font-style normal, itallic */
+/* font-family: 'IBM Plex Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* 기본 폰트 설정은 한국어로 */
 /* 영어 폰트의 경우에는 클래스나, 아이디로 설정함 */
