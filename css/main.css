@@ -94,10 +94,22 @@ div.contents {
     background-color: lemonchiffon;
 }
 
-.timeline > .inner_wrap {
-    background-color: lightpink;
+/* 브랜드 스토리 타임라인 영역 */
+.tline_con {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
+    height: calc(100% - 170px);
+}
+
+p.tline_tit {
+    padding-top: 100px;
+    padding-left: 220px;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 70px;
+    color: #9E8C64;
+    font-weight: bold;
 }
 
 .tline_wrap {
@@ -106,10 +118,19 @@ div.contents {
 
 .tline_img_wrap {
     width: 55%;
-    background-color: yellowgreen;
+    padding-top: 40px;
+    position: relative;
+}
+
+.tline_img_wrap > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -50%);
 }
 
 .tline_txt_wrap {
-    background-color: lightpink;
     width: 45%;
+    padding-top: 40px;
+    border: 1px solid lightcoral;
 }
