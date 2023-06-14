@@ -14,28 +14,27 @@
 
 <body>
 <!--main menu-->
-<!--  .fullNav - toggle click event 발생 시 show  -->
-<!-- TODO: overlay 시 뒤 body 영역이 scroll 되는 것 해결 -->
-<!-- fullNav -> js display: block; -->
-<section id="full_nav_wrap" class="fullNav">
-    <div class="split-container">
+<section id="full_nav_wrap" class="fullNav" style="display:none;">
+    <div class="split-container split1">
         <div class="image-container">
-            <img src="/images/logo_memu.svg" alt="Test Image">
+            <img src="/images/logo_memu.svg" alt="Test Image" id="main-logo">
         </div>
+    </div>
+    <div class="split-container split2">
         <nav id="main_nav">
             <div class="main_nav_wrap">
                 <ul class="nav nav_list">
-                    <li><a href="#">COLORED PENCIL</a></li>
-                    <li><a href="#">MARKER</a></li>
-                    <li><a href="#">PASTEL</a></li>
-                    <li><a href="#">PAINT</a></li>
+                    <li><a href="sub_contents.html#section1">COLORED PENCIL</a></li>
+                    <li><a href="sub_contents.html#section2">MARKER</a></li>
+                    <li><a href="sub_contents.html#section3">PASTEL</a></li>
+                    <li><a href="sub_contents.html#section4">PAINT</a></li>
                 </ul>
-                <img src="/images/btn_close.png" class="Vector">
                 <img src="images/faceboock.png" class="faceboock">
                 <img src="images/twitter-fill.png" class="twitter-fill">
                 <img src="images/instagram-original.png" class="instagram-original">
                 <img src="images/youtube.png" class="youtube">
             </div>
+            <img src="/images/btn_close.png" class="Vector">
         </nav>
     </div>
 </section>
@@ -106,7 +105,7 @@
     </section>
 </main>
 
-<!--  main js 연결  -->
-<script src="./js/main.js"></script>
+<!--  common js 연결  -->
+<script src="./js/common.js"></script>
 </body>
 </html>
