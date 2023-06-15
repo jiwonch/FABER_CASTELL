@@ -86,9 +86,6 @@ div.contents {
     background: darkred;
 }
 
-.story > .inner_wrap {
-    background-color: lightcyan;
-}
 /* 스토리영역시작 */
 .color_red{
     color: #FFACAC;
