@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <!--  jQuery CDN  -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
@@ -15,28 +14,27 @@
 
 <body>
 <!--main menu-->
-<!--  .fullNav - toggle click event 발생 시 show  -->
-<!-- TODO: overlay 시 뒤 body 영역이 scroll 되는 것 해결 -->
-<!-- fullNav -> js display: block; -->
-<section id="full_nav_wrap" class="fullNav">
-    <div class="split-container">
+<section id="full_nav_wrap" class="fullNav" style="display:none;">
+    <div class="split-container split1">
         <div class="image-container">
-            <img src="/images/logo_memu.svg" alt="Test Image">
+            <img src="/images/logo_memu.svg" alt="Test Image" id="main-logo">
         </div>
+    </div>
+    <div class="split-container split2">
         <nav id="main_nav">
             <div class="main_nav_wrap">
                 <ul class="nav nav_list">
-                    <li><a href="#">COLORED PENCIL</a></li>
-                    <li><a href="#">MARKER</a></li>
-                    <li><a href="#">PASTEL</a></li>
-                    <li><a href="#">PAINT</a></li>
+                    <li><a href="sub_contents.html#section1">COLORED PENCIL</a></li>
+                    <li><a href="sub_contents.html#section2">MARKER</a></li>
+                    <li><a href="sub_contents.html#section3">PASTEL</a></li>
+                    <li><a href="sub_contents.html#section4">PAINT</a></li>
                 </ul>
-                <img src="/images/btn_close.png" class="Vector">
                 <img src="images/faceboock.png" class="faceboock">
                 <img src="images/twitter-fill.png" class="twitter-fill">
                 <img src="images/instagram-original.png" class="instagram-original">
                 <img src="images/youtube.png" class="youtube">
             </div>
+            <img src="/images/btn_close.png" class="Vector">
         </nav>
     </div>
 </section>
@@ -150,16 +148,34 @@
 
             <!-- brand timeline -->
             <article class="brandstory timeline">
+                <img class="tline_background" src="./images/tline_Bimg.svg" alt="timeline_background">
                 <div class="inner_wrap">
-                    <div class="tline_img_wrap tline_wrap">image section</div>
-                    <div class="tline_txt_wrap tline_wrap">time line text section</div>
+                    <p class="tline_tit">CHRONOLOGICAL TABLE</p>
+                    <div class="tline_con">
+                        <div class="tline_img_wrap tline_wrap">
+                            <img src="./images/tline_inner.svg" alt="timeline_img">
+                        </div>
+                        <div class="tline_txt_wrap tline_wrap">
+                            <div class="tline_dot"></div>
+                            <div class="tline_bar_wrap">
+                                <p class="tline_txt">1730년 설립자 카스파르 파버 탄생</p>
+                                <p class="tline_txt">1761년 독일에서 파버카스텔 설립 및 연필 생산 시작</p>
+                                <p class="tline_txt">1837년 생산공장 설립 및 현대화</p>
+                                <p class="tline_txt">1874년 연필에 회사 이름을 새김으로 고급화 시작</p>
+                                <p class="tline_txt">1949년 볼펜 생산</p>
+                                <p class="tline_txt">1905년 '카스텔' 이름의 고급연필 제작 및 새로운 로고 지정</p>
+                                <p class="tline_txt">1908년 '폴리크로모스' 색연필 제작</p>
+                                <p class="tline_txt">1948년 특허받은 전문가용 'TK샤프' 생산</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </div>
     </section>
 </main>
 
-<!--  main js 연결  -->
-<script src="./js/main.js"></script>
+<!--  common js 연결  -->
+<script src="./js/common.js"></script>
 </body>
 </html>

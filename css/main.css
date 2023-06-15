@@ -3,157 +3,6 @@ body {
 }
 
 
-/***** 메뉴 영역 [S] *****/
-#full_nav_wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* 기존의 속성들 */
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #1A362A;
-    z-index: 100;
-}
-
-#main_nav {
-    flex: 1;
-    background-color: white;
-}
-.main_nav_wrap {
-    height: 980px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#main_nav .nav_list li>a {
-    color: #1A362A;
-}
-
-#main_nav .nav_list li>a:hover {
-    color: white;
-    background-color: #1A362A;
-}
-
-.nav_list li {
-    height:150px;
-}
-
-.nav_list li>a {
-    color: white;
-    font-size: 70px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.nav_list {
-    position: absolute;
-    width: 627px;
-    height: 574px;
-    left: 145px;
-    top: 150px;
-}
-
-.split-container {
-    display: flex;
-    justify-content: space-between;
-    width: 1920px;
-    height: 100%; /* 브라우저 높이를 100%로 설정 */
-}
-
-.split-container .image-container {
-    flex: 1;
-    margin-right: 10px;
-    height: 100%; /* 브라우저 높이를 100%로 설정 */
-}
-
-.split-container .image-container img {
-    width: 100%;
-    height: 100%; /* 부모 요소인 .image-container의 높이를 100%로 설정 */
-}
-
-
-/***** 메뉴 영역 [E] *****/
-
-header#header_wrap {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    z-index: 50;
-    left: 0;
-    top: 0;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-/* 햄버거 메뉴 */
-#tgl_mn {
-    margin-right: 20px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background-color: black;
-    position: absolute;
-    z-index: 9999;
-}
-#tgl_mn svg {
-    fill: white;
-}
-
-
-/* 닫기 버튼 */
-img.Vector {
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    right:50px;
-    top:50px;
-    object-fit: contain;
-}
-
-
-/* SNS 버 */
-img.faceboock {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:110px;
-    bottom:35px;
-    object-fit: contain;
-}
-img.twitter-fill {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:218px;
-    bottom:35px;
-    object-fit: contain;
-}
-img.instagram-original {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:326px;
-    bottom:35px;
-    object-fit: contain;
-}
-img.youtube {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:434px;
-    bottom:35px;
-    object-fit: contain;
-}
-
-
-
-
 .hidden {
     width: 1px;
     height: 1px;
@@ -207,6 +56,7 @@ section#brandstory_wrap {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -299,10 +149,35 @@ div.contents {
 }
 
 
-.timeline > .inner_wrap {
-    background-color: lightpink;
+/* 브랜드 스토리 타임라인 영역 */
+article.timeline {
+    position: relative;
+}
+
+.tline_background {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-60%, -80%);
+    width: 55%;
+    height: 55%;
+}
+
+.tline_con {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
+    height: calc(100% - 170px);
+}
+
+p.tline_tit {
+    padding-top: 100px;
+    padding-left: 220px;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 70px;
+    color: #9E8C64;
+    font-weight: bold;
 }
 
 .tline_wrap {
@@ -311,10 +186,48 @@ div.contents {
 
 .tline_img_wrap {
     width: 55%;
-    background-color: yellowgreen;
+    padding-top: 40px;
+    position: relative;
+}
+
+.tline_img_wrap > img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -51%);
 }
 
 .tline_txt_wrap {
-    background-color: lightpink;
     width: 45%;
+    padding-top: 110px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tline_dot {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d9d9d9;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+
+.tline_bar_wrap {
+    width: 95%;
+    height: 480px;
+    border-left: 1px solid #d9d9d9;
+    margin-top: 35px;
+    margin-left: 9px;
+}
+
+p.tline_txt {
+    color: #d9d9d9;
+    line-height: 150%;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 45px;
+    margin-top: 30px;
 }

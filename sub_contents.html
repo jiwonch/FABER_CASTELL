@@ -6,7 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/sub_style.css">
     <!--  jQuery CDN  -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
@@ -19,9 +18,49 @@
     <title>Faber-Castell PRODUCTS</title>
 </head>
 <body>
-    <!-- TODO fullpage js 구현 -->
-    <!-- contents section - Fiber Castell Products -->
-    <main id="main" class="scroll_container">
+
+<!--  header  -->
+<header id="header_wrap">
+    <!-- toggle -> tgl -->
+    <!-- .tglMn -> js 연결 - main menu open -->
+    <div id="tgl_mn" class="tglMn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="white" d="M0 0h24v24H0z" fill-opacity="0"/>
+            <path fill="white" d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </div>
+</header>
+
+<!--main menu-->
+<section id="full_nav_wrap" class="fullNav" style="display:none;">
+    <div class="split-container split1">
+        <div class="image-container">
+            <img src="/images/logo_memu.svg" alt="Test Image" id="main-logo">
+        </div>
+    </div>
+    <div class="split-container split2">
+        <nav id="main_nav">
+            <div class="main_nav_wrap">
+                <ul class="nav nav_list">
+                    <li><a href="#section1">COLORED PENCIL</a></li>
+                    <li><a href="#section2">MARKER</a></li>
+                    <li><a href="#section3">PASTEL</a></li>
+                    <li><a href="#section4">PAINT</a></li>
+                </ul>
+                <img src="images/faceboock.png" class="faceboock">
+                <img src="images/twitter-fill.png" class="twitter-fill">
+                <img src="images/instagram-original.png" class="instagram-original">
+                <img src="images/youtube.png" class="youtube">
+            </div>
+            <img src="/images/btn_close.png" class="Vector">
+        </nav>
+    </div>
+</section>
+
+
+<!-- TODO fullpage js 구현 -->
+<!-- contents section - Fiber Castell Products -->
+<main id="main" class="scroll_container">
 
         <!-- 정태 - 색연필-->
         <section class="section1">
@@ -51,33 +90,33 @@
                 </article>
                 <article class="contents_left_image">
 
-                </article>
-                <article class="contents_right_image">
+            </article>
+            <article class="contents_right_image">
 
                 </article>
             </article>
         </section>
 
-        <!-- 지원 - 마커-->
-        <section class="section2">
-            <article class="marker products">
-                <div class="marker_outerwrap">
-                    <div class="marker_outer_bg"></div>
+    <!-- 지원 - 마커-->
+    <section class="section2" id="section2">
+        <article class="marker products">
+            <div class="marker_outerwrap">
+                <div class="marker_outer_bg"></div>
+            </div>
+            <div class="marker_innerwrap">
+                <div class="marker_img"></div>
+                <div class="marker_text">
+                    <h1 class="marker_txt">알버트 뒤러 수채 마커</h1>
+                    <p class="marker_context">
+                        알버트 뒤러 수처 마커는 '현대 수채화'를 모두 표현하기에 충분한
+                        제품입니다. 고품질 드로잉 도구로 수채기법뿐만 아니라 스케치까지 가능합니다.
+                        수성 잉크는 물과 함께 사용할수록 효과적입니다.<br>
+                        전문가용 수채 마커는 높은 발색력과 내광성이 뛰어나 최고의 품질을 보장합니다.
+                    </p>
                 </div>
-                <div class="marker_innerwrap">
-                    <div class="marker_img"></div>
-                    <div class="marker_text">
-                        <h1 class="marker_txt">알버트 뒤러 수채 마커</h1>
-                        <p class="marker_context">
-                            알버트 뒤러 수처 마커는 '현대 수채화'를 모두 표현하기에 충분한
-                            제품입니다. 고품질 드로잉 도구로 수채기법뿐만 아니라 스케치까지 가능합니다.
-                            수성 잉크는 물과 함께 사용할수록 효과적입니다.<br>
-                            전문가용 수채 마커는 높은 발색력과 내광성이 뛰어나 최고의 품질을 보장합니다.
-                        </p>
-                    </div>
-                </div>
-            </article>
-        </section>
+            </div>
+        </article>
+    </section>
 
         <!--  고은 - 파스텔  -->
         <section class="section3">
@@ -101,14 +140,16 @@
             </article>
         </section>
 
-        <!--  혁성 - 물감  -->
-        <section class="section4">
-            <article class="paint products">
-                <span>Paint</span>
-            </article>
-        </section>
-    </main>
+    <!--  혁성 - 물감  -->
+    <section class="section4" id="section4">
+        <article class="paint products">
+            <span>Paint</span>
+        </article>
+    </section>
+</main>
 
-    <script src="./js/sub_contents.js"></script>
+<!--  common js 연결  -->
+<script src="./js/common.js"></script>
+<script src="./js/sub_contents.js"></script>
 </body>
 </html>
