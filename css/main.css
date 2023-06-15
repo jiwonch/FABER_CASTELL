@@ -223,6 +223,63 @@ article.brandstory {
     height: 930px;
 }
 
+div.philo_inner{
+    padding-top:100px;
+}
+
+div.philo_title{
+    width:480px;
+    height:90px;
+}
+h2.philo_text_title{
+    font:bold 70px/90px "IBM Plex Sans";
+    color:#9E8C64;
+}
+
+ul#philo_list {
+    width:100%;
+    height:560px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+ul#philo_list>li{
+    width:33.3%;
+    height:50%;
+    background: #1A362A;
+    border:solid 1px gray;
+    box-sizing: border-box;
+    padding-top:45px;
+    padding-left: 45px;
+}
+
+h3.philo_subtitle{
+    width:250px;
+    height:30px;
+    color:#F6F6F0;
+}
+
+ul.philo_subtext{
+    width:335px;
+    height:130px;
+    float:left;
+    margin-top: 20px;
+}
+
+ul.philo_subtext li{
+    width:100%;
+    height:35px;
+    text-indent: 10px;
+    color:#F6F6F0;
+}
+
+ul#philo_list>li:first-child{
+    background:url("/images/philo_back.svg")no-repeat center;
+    background-size: cover;
+}
+
 /* 브랜드스토리영역끝 /
 / 콘텐츠영역시작 */
 div#contents_wrap {
@@ -241,9 +298,6 @@ div.contents {
     background-color: lightcyan;
 }
 
-.philo > .inner_wrap {
-    background-color: lemonchiffon;
-}
 
 .timeline > .inner_wrap {
     background-color: lightpink;
