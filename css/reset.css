@@ -76,10 +76,6 @@ table {
 	border-spacing: 0;
 }
 
-input {
-	outline: none;
-}
-
 
 
 
@@ -240,3 +236,13 @@ img.youtube {
 }
 
 /***** 메뉴 영역 [E] *****/
+input {
+	outline: none;
+}
+.hidden{
+	width: 1px;
+	height: 1px;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+}
