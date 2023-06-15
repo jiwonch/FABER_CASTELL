@@ -72,7 +72,92 @@ article.brandstory {
     width: 100%;
     height: 930px;
 }
+/* 브랜드스토리영역끝 /
+/ 콘텐츠영역시작 */
+div#contents_wrap {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+}
 
+div.contents {
+    width: 100%;
+    height: 980px;
+    background: darkred;
+}
+
+.story > .inner_wrap {
+    background-color: lightcyan;
+}
+/* 스토리영역시작 */
+.color_red{
+    color: #FFACAC;
+}
+div.story_re{
+    position: relative;
+}
+div.story_left{
+    width: 970px;
+    height: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+p.story_title{
+    width: 100%;
+    /*font-family: "IBM Plex Serif", serif;*/
+    /*font-size: 70px;*/
+    /*font-weight: 700;*/
+    font: bold 70px 'IBM Plex Serif',Serif;
+    color: #9E8C64;
+}
+p.story_subtitle{
+    width: 100%;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(246, 246, 240, 0.75);
+    margin-top: 20px;
+    margin-bottom: 120px;
+    text-shadow: 30px 15px 5px rgba(0, 0, 0, 0.4);
+}
+div.story_left_bottom{
+    width: 970px;
+    height: 356px;
+    position: relative;
+    left: 0;
+    top:0;
+}
+p.story_text{
+    width: 633px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #F6F6F0;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+div.story_text_bg{
+    width: 970px;
+    height: 100%;
+    background: #181818;
+    opacity: 0.3;
+    position: absolute;
+    left: -210px;
+    top:-40px;
+}
+div.story_right{
+    width: 606px;
+    height: 100%;
+    position: absolute;
+    right: -77px;
+    top:130px;
+}
+
+/* 스토리영역끝 */
+
+/* 브랜드 스토리 철학 영역 시작*/
 div.philo_inner{
     padding-top:100px;
 }
@@ -129,26 +214,7 @@ ul#philo_list>li:first-child{
     background:url("/images/philo_back.svg")no-repeat center;
     background-size: cover;
 }
-
-/* 브랜드스토리영역끝 /
-/ 콘텐츠영역시작 */
-div#contents_wrap {
-    width: 100%;
-    height: 100%;
-    background: yellow;
-}
-
-div.contents {
-    width: 100%;
-    height: 980px;
-    background: darkred;
-}
-
-.story > .inner_wrap {
-    background-color: lightcyan;
-}
-
-
+/* 브랜드 스토리 철학 영역 끝*/
 /* 브랜드 스토리 타임라인 영역 */
 article.timeline {
     position: relative;
