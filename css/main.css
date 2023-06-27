@@ -153,10 +153,13 @@ div.story_right{
 }
 
 /* 스토리영역끝 */
-
 /* 브랜드 스토리 철학 영역 시작*/
 div.philo_inner{
     padding-top:100px;
+}
+.philo > .inner_wrap {
+    background-color: lemonchiffon;
+
 }
 
 div.philo_title{
