@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+.hide {
+    visibility: hidden;
+  }
 section#intro_wrap {
     background-color: #1A362A;
     width: 100vw;
@@ -31,10 +34,12 @@ div#intro_logo_box{
     box-sizing: border-box;
 }
 div#intro_img{
-    width: 146px;
+    /* width: 146px; */
+    width: 1px;
     height: 90px;
-    background: url('/images/logo_Lancer_img.svg') no-repeat center;
+    background: url('/images/logo_Lancer_img.svg') no-repeat right;
     margin: 0 auto;
+    opacity: 0;
 }
 /* 인트로 name 구역 */
 div#intro_name_box{
@@ -43,18 +48,21 @@ div#intro_name_box{
     margin-top: 15px;
 }
 ul#intro_name_list{
-    width: 100%;
+    width: 92%;
     height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: flex-end;
+    margin: 0 auto;
 }
 ul#intro_name_list>li{
     width: 40px;
     height: 68px;
     margin-right: 10px;
+    display: none;
+    opacity: 0;
 }
 ul#intro_name_list li.intro_f{
     width: 57px;
@@ -117,7 +125,7 @@ div#intro_since_box{
     width: 120px;
     height: 24px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 ul#intro_since_list{
     width: 100%;
@@ -125,13 +133,15 @@ ul#intro_since_list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 ul#intro_since_list li{
     width: 10px;
     height: 100%;
     margin-right: 1px;
+    display: none;
+    opacity: 0;
 }
 ul#intro_since_list li.since_s{
     width: 9.8px;
