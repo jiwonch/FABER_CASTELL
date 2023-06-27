@@ -89,7 +89,7 @@ header#header_wrap {
 	z-index: 50;
 	left: 0;
 	top: 0;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
