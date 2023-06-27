@@ -3,157 +3,6 @@ body {
 }
 
 
-/***** 메뉴 영역 [S] *****/
-#full_nav_wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* 기존의 속성들 */
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #1A362A;
-    z-index: 100;
-}
-
-#main_nav {
-    flex: 1;
-    background-color: white;
-}
-.main_nav_wrap {
-    height: 980px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#main_nav .nav_list li>a {
-    color: #1A362A;
-}
-
-#main_nav .nav_list li>a:hover {
-    color: white;
-    background-color: #1A362A;
-}
-
-.nav_list li {
-    height:150px;
-}
-
-.nav_list li>a {
-    color: white;
-    font-size: 70px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.nav_list {
-    position: absolute;
-    width: 627px;
-    height: 574px;
-    left: 145px;
-    top: 150px;
-}
-
-.split-container {
-    display: flex;
-    justify-content: space-between;
-    width: 1920px;
-    height: 100%; /* 브라우저 높이를 100%로 설정 */
-}
-
-.split-container .image-container {
-    flex: 1;
-    margin-right: 10px;
-    height: 100%; /* 브라우저 높이를 100%로 설정 */
-}
-
-.split-container .image-container img {
-    width: 100%;
-    height: 100%; /* 부모 요소인 .image-container의 높이를 100%로 설정 */
-}
-
-
-/***** 메뉴 영역 [E] *****/
-
-header#header_wrap {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    z-index: 50;
-    left: 0;
-    top: 0;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-/* 햄버거 메뉴 */
-#tgl_mn {
-    margin-right: 20px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background-color: black;
-    position: absolute;
-    z-index: 9999;
-}
-#tgl_mn svg {
-    fill: white;
-}
-
-
-/* 닫기 버튼 */
-img.Vector {
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    right:50px;
-    top:50px;
-    object-fit: contain;
-}
-
-
-/* SNS 버 */
-img.faceboock {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:110px;
-    bottom:35px;
-    object-fit: contain;
-}
-img.twitter-fill {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:218px;
-    bottom:35px;
-    object-fit: contain;
-}
-img.instagram-original {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:326px;
-    bottom:35px;
-    object-fit: contain;
-}
-img.youtube {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left:434px;
-    bottom:35px;
-    object-fit: contain;
-}
-
-
-
-
 .hidden {
     width: 1px;
     height: 1px;
@@ -182,10 +31,6 @@ ul#skip_mn_list>li>a:focus {
     margin: 0 auto;
 }
 
-#visual_wrap .inner_wrap {
-    border: 1px solid #1A362A;
-}
-
 /* 인트로영역끝*/
 /* 비쥬얼영역시작 */
 section#visual_wrap {
@@ -197,6 +42,105 @@ section#visual_wrap {
     top: 0;
 }
 
+div#visual_left{
+    width:53%;
+    height:100%;
+    background: #F6F6F0;
+    float:left;
+}
+
+div#visual_right{
+    width:47%;
+    height:100%;
+    background: url("/images/visual_right_bg.svg") no-repeat center;
+    background-size: cover;
+    float:left;
+}
+
+article.visual_inner{
+    position:absolute;
+    left:50%;
+    margin-left: -600px;
+    top:0px;
+    opacity: 1;
+}
+
+div#inner_left{
+    width:50%;
+    height:100%;
+    background: #F6F6F0;
+    float:left;
+}
+
+div#leaf_top{
+    width:300px;
+    height:200px;
+    background: red;
+    position:absolute;
+    left:-100px;
+    top:50px;
+    background: url("/images/pngwing_00.png") no-repeat center;
+    background-size: cover;
+}
+
+div#main_text{
+    width:400px;
+    height:500px;
+    position:absolute;
+    left:0px;
+    top:200px;
+}
+
+div#main_text_1{
+    width:100%;
+    height:150px;
+}
+
+div#main_text_2{
+    width:100%;
+    height:350px;
+}
+
+h2#main_text_title{
+    font:bold 60px "IBM Plex Sans";
+
+}
+
+p#main_text_subtitle{
+    font:normal 24px "GmarketSansMedium";
+
+}
+
+div#prd_img{
+    width:400px;
+    height:400px;
+    position:absolute;
+    left:500px;
+    top:270px;
+    background: url("/images/visual_prd.png") no-repeat center;
+    background-size: cover;
+}
+div#prd_img:hover{
+    transform: scale(1.3);
+
+}
+
+div#prd_img2{
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:400px;
+    top:570px;
+    background: url("/images/visual_prd2.png") no-repeat center;
+    background-size: cover;
+}
+div#prd_img2:hover{
+    transform: scale(1.3);
+}
+
+
+
+
 /* 비쥬얼영역끝 /
 / 브랜드스토리영역시작 */
 section#brandstory_wrap {
@@ -207,6 +151,7 @@ section#brandstory_wrap {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 
@@ -237,18 +182,159 @@ div.contents {
     background: darkred;
 }
 
-.story > .inner_wrap {
-    background-color: lightcyan;
+/* 스토리영역시작 */
+.color_red{
+    color: #FFACAC;
+}
+div.story_re{
+    position: relative;
+}
+div.story_left{
+    width: 970px;
+    height: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+p.story_title{
+    width: 100%;
+    /*font-family: "IBM Plex Serif", serif;*/
+    /*font-size: 70px;*/
+    /*font-weight: 700;*/
+    font: bold 70px 'IBM Plex Serif',Serif;
+    color: #9E8C64;
+}
+p.story_subtitle{
+    width: 100%;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(246, 246, 240, 0.75);
+    margin-top: 20px;
+    margin-bottom: 120px;
+    text-shadow: 30px 15px 5px rgba(0, 0, 0, 0.4);
+}
+div.story_left_bottom{
+    width: 970px;
+    height: 356px;
+    position: relative;
+    left: 0;
+    top:0;
+}
+p.story_text{
+    width: 633px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #F6F6F0;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+div.story_text_bg{
+    width: 970px;
+    height: 100%;
+    background: #181818;
+    opacity: 0.3;
+    position: absolute;
+    left: -210px;
+    top:-40px;
+}
+div.story_right{
+    width: 606px;
+    height: 100%;
+    position: absolute;
+    right: -77px;
+    top:130px;
 }
 
-.philo > .inner_wrap {
-    background-color: lemonchiffon;
+/* 스토리영역끝 */
+/* 브랜드 스토리 철학 영역 시작*/
+div.philo_inner{
+    padding-top:100px;
+}
+div.philo_title{
+    width:480px;
+    height:90px;
+}
+h2.philo_text_title{
+    font:bold 70px/90px "IBM Plex Sans";
+    color:#9E8C64;
 }
 
-.timeline > .inner_wrap {
-    background-color: lightpink;
+ul#philo_list {
+    width:100%;
+    height:560px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+ul#philo_list>li{
+    width:33.3%;
+    height:50%;
+    background: #1A362A;
+    border:solid 1px gray;
+    box-sizing: border-box;
+    padding-top:45px;
+    padding-left: 45px;
+}
+
+h3.philo_subtitle{
+    width:250px;
+    height:30px;
+    color:#F6F6F0;
+}
+
+ul.philo_subtext{
+    width:335px;
+    height:130px;
+    float:left;
+    margin-top: 20px;
+}
+
+ul.philo_subtext li{
+    width:100%;
+    height:35px;
+    text-indent: 10px;
+    color:#F6F6F0;
+}
+
+ul#philo_list>li:first-child{
+    background:url("/images/philo_back.svg")no-repeat center;
+    background-size: cover;
+}
+/* 브랜드 스토리 철학 영역 끝*/
+/* 브랜드 스토리 타임라인 영역 */
+article.timeline {
+    position: relative;
+}
+
+.tline_background {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-60%, -80%);
+    width: 55%;
+    height: 55%;
+}
+
+.tline_con {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
+    height: calc(100% - 170px);
+}
+
+p.tline_tit {
+    padding-top: 100px;
+    padding-left: 220px;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 70px;
+    color: #9E8C64;
+    font-weight: bold;
 }
 
 .tline_wrap {
@@ -257,10 +343,48 @@ div.contents {
 
 .tline_img_wrap {
     width: 55%;
-    background-color: yellowgreen;
+    padding-top: 40px;
+    position: relative;
+}
+
+.tline_img_wrap > img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -51%);
 }
 
 .tline_txt_wrap {
-    background-color: lightpink;
     width: 45%;
+    padding-top: 110px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tline_dot {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d9d9d9;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+
+.tline_bar_wrap {
+    width: 95%;
+    height: 480px;
+    border-left: 1px solid #d9d9d9;
+    margin-top: 35px;
+    margin-left: 9px;
+}
+
+p.tline_txt {
+    color: #d9d9d9;
+    line-height: 150%;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 45px;
+    margin-top: 30px;
 }

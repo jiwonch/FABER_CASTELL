@@ -10,4 +10,8 @@ $(document).ready(function(){
             $("body").css("overflow-y", "hidden");
         }
     });
+
+    $('#main-logo').click(function(){
+        location.href='main.html';
+    });
 });
