@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
-    const IntroName = document.querySelectorAll('#intro_name_list > li');   //파버카스텔 이름
-    const IntroSince=document.querySelectorAll('#intro_since_list > li');   // 연도
+    const IntroName=document.querySelectorAll('#intro_name_list>li');   //파버카스텔 이름
+    const IntroSince=document.querySelectorAll('#intro_since_list>li');   // 연도
     const IntroImg=document.querySelector('#intro_img') //이미지
     const delay1=130;   // 파버카스텔 이름 타이핑 속도 조정
     const delay2=100;   // 연도 타이핑 속도 조절
